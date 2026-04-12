@@ -27,4 +27,22 @@ public class TaskManager {
             }
         }
     }
+
+    //task is completed or not 
+
+    public void toggleComplete(int id){
+        for(int i =0;i<tasks.size();i++){
+            Task currentTask = tasks.get(i);
+            if(currentTask.getId()== id){
+               currentTask.toggleComplete();
+                break;
+            }
+        }
+    }
+
+    //get all tasks 
+
+    public ArrayList<Task> getAllTasks(){
+        return tasks;
+    }
 }

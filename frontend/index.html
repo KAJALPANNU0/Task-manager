@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--toggle buttons-->
+    <div class="theme-toggle">
+        <button class="btn" id="light">Light Mode</button>
+        <button class="btn" id="dark">Dark Mode</button>
+        <button class="btn" id="colorful">Colorfull Mode</button>
+    </div>
+<!--header and progress ring-->
+    <div class="header">
+        <h2>Task Manager</h2>
+        <div class="progress-ring">
+            <svg width="80" height ="80">
+                <circle cx ="40" cy="40" r="30" class="ring-bg"/>
+                <circle cx ="40" cy="40" r="30" class="ring-fill" id="progress-ring"/>
+            </svg>
+            <span id="progress-text">0/0</span>
+        </div>
+    </div>
+
+<!-- thoughts and quote-->
+<div class="thoughts">
+<textarea class="thoughts-inp" placeholder="what are yoou thinking?"></textarea>
+</div>
+<!--date-->
+<div class="date-section">
+<p id="date">Date</p>
+</div>
+<!-- add task-->
+ <div class="add-task">
+<input type="text" id="task-inp" placeholder="Add tasks">
+<button class="add-btn" id="add-btn" > + COm'on, add it</button>
+ </div>
+ <!--task list-->
+ <div class="task-list">
+<div class="task-item">
+    <input type="checkbox">
+<span>aaj kuch nhi karna</span>
+<button class="del-btn">X</button>
+</div>
+
+<div class="task-item">
+    <input type="checkbox">
+<span>aaj kuch nhi karna</span>
+<button class="del-btn">X</button>
+</div>
+
+<div class="task-item">
+    <input type="checkbox">
+<span>aaj kuch nhi karna</span>
+<button class="del-btn">X</button>
+</div>
+
+<div class="task-item">
+    <input type="checkbox">
+<span>aaj kuch nhi karna</span>
+<button class="del-btn">X</button>
+</div>
+ </div>
+    
+ <script src="script.js"></script>
+</body>
+</html>
